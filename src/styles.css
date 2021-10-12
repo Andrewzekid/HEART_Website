@@ -199,14 +199,14 @@ main * {
   
 /*about */
 #about {
-    height: 30vh;
+    height: 40vh;
     width: 100%;
     background: #fff;
 
 }
 
 #services {
-    height: 25vh;
+    height: 40vh;
     width: 100%;
     background: #f9f9f9;
 
@@ -230,7 +230,7 @@ main * {
     height: 1px;
     display: inline-block;
     background:rgba(16, 160, 23, 0.733);
-    margin: 5px 10px;
+    margin: 10px 10px;
 
 }
 #services .main-paragraph {
@@ -399,15 +399,36 @@ main * {
 		
 	}
 
+    #services h3::before {
+        content: "";
+        width: 120px;
+        height: 1px;
+        display: inline-block;
+        background:rgba(16, 160, 23, 0.733);
+        margin: 0px;
+    
+    }
+
     p {
         font-size: 1rem;
     }
 	.content1 {
-		margin-top: 4.5rem;
+		margin-top: 2.5rem;
 	}
 	#about {
-		height: 75vh;
+		height: 90vh;
 	}
+    #about .container .content {
+        width: 92%;
+    }
+
+    #services .container .content .grid {
+        margin-top:.5rem;
+    }
+
+    #services .container .content {
+        margin-top: 0rem;
+    }
 	.content {
 		margin-top: 1rem;
 		display: grid;
