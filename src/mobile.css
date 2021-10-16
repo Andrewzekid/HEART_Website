@@ -1,0 +1,17 @@
+/* css for additional mobile breakpoints */
+#image {
+    max-width: 300px; 
+    max-height: 300px; 
+}
+
+
+@media screen and (max-width: 640px) {
+    #image {
+        max-width: 0px;
+        max-height: 0px;
+        display: none !important;
+    }
+    #circle {
+        display: none !important;
+    }
+}
