@@ -5,7 +5,9 @@
     --secondary-color: #E82521;
     --tertiary-color: #DD2D2C;
 }
-
+body {
+    overflow-x: hidden !important;
+}
 
 * {
     margin: 0;
@@ -81,6 +83,17 @@ ul li a {
 
 .current {
     color: var(--secondary-color);
+}
+#nav-link:hover {
+    color: var(--primary-color);
+}
+
+#nav-link-red {
+    color: var(--primary-color);
+}
+
+#nav-link-red:hover {
+    color: rgb(112,16,15); 
 }
 
 /*showcase */
@@ -316,7 +329,7 @@ main * {
 #services .content {
     display: grid;
     grid-template-columns: 1.5fr 1.5fr 1.5fr 2fr;
-	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
     grid-gap: 0rem 0rem 0rem 2rem;
     margin-top: 4rem;
     align-items: center;
@@ -370,8 +383,18 @@ main * {
     color:rgba(236, 131, 10, 0.993) !important;
 }
 @media screen and (max-width: 1800px) {
+    #about .container .content,
+    #services .container .content {
+        width: 100%;
+        height: 100%;
+    }
+
+    #services .container .content {
+        padding: 0rem 1rem;
+    }
+
     #services {
-        height: 90vh;
+        height: 60vh;
         width: 100%;
         background: #f9f9f9;
     
@@ -416,7 +439,7 @@ main * {
 		margin-top: 2.5rem;
 	}
 	#about {
-		height: 90vh;
+		height: 45vh;
 	}
     #about .container .content {
         width: 92%;
